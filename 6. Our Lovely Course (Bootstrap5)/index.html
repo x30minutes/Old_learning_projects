@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="styling.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap" rel="stylesheet">
+
+
+    <title>Our Lovely Course</title>
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="#navigationBar">
+
+<!--    Add video to the body element-->
+      <video autoplay loop muted id="backgroundVideo">
+          <source src="videos/background%201920%20x1080%2030fps.mp4" type="video/mp4">
+      </video>
+<!--    Create navigation bar-->
+      <nav id="navigationBar" role="navigation" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+          <div class="container-fluid">
+              <a class="navbar-brand" href="#">Complete Web Development Course</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavigation" aria-controls="navbarNavigation" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNavigation">
+                  <ul class="navbar-nav">
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#homeSection">Home</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#courseDetailsSection">About</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#ourPromiseSection">Our Promise</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+<!--    Create home section with title, goal, and join us button-->
+      <div class="card text-center" id="homeSection">
+          <div class="card-body">
+              <h1 class="card-title">Complete Web Development Course</h1>
+              <h2 class="card-text">Go from Zero-skills to Cash-Earning Web Developer</h2>
+              <a id="joinButton" href="#" class="btn btn-primary">Join us Now!</a>
+          </div>
+      </div>
+<!--    Create about section showing course details-->
+      <div class="container">
+          <div class="card-group text-center" id="courseDetailsSection">
+            <div class="card">
+              <img src="images/rating.png" class="card-img-top rounded mx-auto d-block" alt="Quality">
+              <div class="card-body">
+                  <h2 class="card-title">High Quality Lectures</h2>
+                  <p class="card-text">All lectures have been very well prepared for the best learning experience of future developers.</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="images/content.png" class="card-img-top rounded mx-auto d-block" alt="Content">
+              <div class="card-body">
+                  <h2 class="card-title">+80H of Rich Content</h2>
+                  <p class="card-text">Learn all major Web Technologies: HTML5, CSS3, Javascript, JQuery, Twitter Bootstrap, PHP, mySQL, Wordpress, Ajax, XML, JSON, Mobile Apps, API's:Google Maps, Facebook and MORE!</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="images/help.png" class="card-img-top rounded mx-auto d-block" alt="Help">
+              <div class="card-body">
+                  <h2 class="card-title">Get Help Anytime!</h2>
+                  <p class="card-text">Post your questions in the forums of the course where myself and thousands of students are happy to help!</p>
+              </div>
+            </div>
+          </div>
+<!--    Create Carousel for promise section-->
+          <div id="ourPromiseSection" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+              <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#ourPromiseSection" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#ourPromiseSection" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#ourPromiseSection" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#ourPromiseSection" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#ourPromiseSection" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                  <button type="button" data-bs-target="#ourPromiseSection" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                  <button type="button" data-bs-target="#ourPromiseSection" data-bs-slide-to="6" aria-label="Slide 7"></button>
+              </div>
+              <div class="carousel-inner">
+                  <div class="carousel-item active">
+                      <div class="card text-center">
+                          <img src="images/slide1.webp" class="card-img-top rounded mx-auto d-block" alt="Slide1">
+                          <div class="card-body">
+                              <h5>Crystal Clear and Engaging 100% Hands-on Lectures.</h5>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                      <div class="card text-center">
+                          <img src="images/slide2.webp" class="card-img-top rounded mx-auto d-block" alt="Slide2">
+                          <div class="card-body">
+                              <h5>Full curriculum including all major Web Technologies: Front-End, Back-End, Mobile Apps and API's.</h5>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                      <div class="card text-center">
+                          <img src="images/slide3.jpg" class="card-img-top rounded mx-auto d-block" alt="Slide3">
+                          <div class="card-body">
+                              <h5>Start from Zero-Skills! No prior Knowledge Required.</h5>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                      <div class="card text-center">
+                          <img src="images/slide4.png" class="card-img-top rounded mx-auto d-block" alt="Slide4">
+                          <div class="card-body">
+                              <h5>Build over 15 real professional Websites, Games and Mobile apps.</h5>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                      <div class="card text-center">
+                          <img src="images/slide5.webp" class="card-img-top rounded mx-auto d-block" alt="Slide5">
+                          <div class="card-body">
+                              <h5>Start Making money from week 1 and Earn over 30 000$ by the time you finish the Course.</h5>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                      <div class="card text-center">
+                          <img src="images/slide6.webp" class="card-img-top rounded mx-auto d-block" alt="Slide6">
+                          <div class="card-body">
+                              <h5>Enhance your career and employability skills.</h5>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                      <div class="card text-center">
+                          <img src="images/slide7.webp" class="card-img-top rounded mx-auto d-block" alt="Slide7">
+                          <div class="card-body">
+                              <h5>Lifetime access to all course material.</h5>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#ourPromiseSection" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#ourPromiseSection" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+              </button>
+          </div>
+      </div>
+
+      
+<!--    Create footer-->
+    <div class="footer">&copy; Develop with Hubert</div>
+      
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+      
+  </body>
+</html>

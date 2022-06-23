@@ -1,0 +1,116 @@
+/*style body elements by adding background-image and set to cover, add font-family*/
+body{
+    background: url(images/milyway-background.jpeg) center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: serif;
+    height: 100vh;
+}
+
+/*Style brand image*/
+#brand-logo{
+    width: 50px;
+    height: 40px;
+}
+
+/*style navigation bar*/
+
+.navbar{
+    background-color: rgb(0,0,0,0.5)
+}
+
+.navbar ul li{
+    padding: 10px 30px;
+    font-size: 21px;
+}
+
+/*style navigation element when hovered over*/
+.navbar ul li:hover{
+    color: #fff;
+    border-bottom: 2px solid rgb(0, 224, 188, 0.8);
+}
+
+/*style title in card*/
+.card{
+    margin-top: 30px ;
+    background-color: rgb(0,0,0,0.0);
+    color: rgb(227, 227, 227);
+    align-items: center;
+}
+
+
+
+#container #main-header{
+    text-align: center;
+    font-size: 80px;
+}
+
+/*style icons section */
+#container .card-body .card-group .card img{
+    width: 150px;
+    height: 150px;
+}
+
+#container .card-body .card-group .card .card-body{
+    text-align: center;
+}
+
+#container .card-body .card-group .card .card-body p{
+    font-size: 20px;
+}
+
+/*style contact button*/
+#contactContainer{
+    margin-top: 20px;
+}
+
+#contactButton{
+    padding: 10px;
+    background-color: rgb(0, 224, 188, 0.5);
+    font-size: 22px;
+    border-radius: 10px;
+    border-style: none;
+}
+
+/*style footer*/
+.footer{
+    height: 40px;
+    color: rgb(80,80,80);
+    background-color: rgb(0,0,0,0.5);
+    font-size: 20px;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+
+/*use media queries to change icons size in small devices*/
+
+/*Add styling for devices between 480px and 768px*/
+@media (min-width: 480px) and (max-width: 768px){
+    #container .card-body .card-group .card img{
+        width: 120px;
+        height: 120px;
+    }
+    #container #main-header{
+    text-align: center;
+    font-size: 60px;
+    }
+    #container .card-body .card-group .card .card-body p{
+    font-size: 16px;
+}
+}
+
+/* Add styling for devices below 480px*/
+@media (max-width: 480px){
+    #container .card-body .card-group .card img{
+        width: 75px;
+        height: 75px;
+    }
+    #container #main-header{
+    text-align: center;
+    font-size: 40px;
+    }
+    #container .card-body .card-group .card .card-body p{
+    font-size: 14px;
+}
+}

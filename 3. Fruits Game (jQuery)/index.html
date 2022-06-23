@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Fruit's game (jQuery)</title>
+        <meta name="viewport" content="width = device-width, initial-scale=1, user-scaleable=yes">
+        <link rel="stylesheet" type="text/css" href="styling.css">
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    </head>
+
+    <body>
+        <div id="container">
+            <div id="trialsLeft">
+                      
+            </div>
+            <div id="score">
+                Score: <span id="scorevalue">0</span>
+            </div>
+            <div id="fruitsContainer">
+                <img id="fruit1" class="fruit">
+            </div>
+            <div id="instruction">
+                Catch Fruits
+            </div>
+            <div id="startreset">
+                Start Game
+            </div>
+            
+            <div id="gameOver">
+            </div>
+        </div>
+        <audio id="sliceSound">
+            <source src="audio/sword-attack.mp3"> 
+            <source src="audio/sword-attack.ogg"> 
+        </audio>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="jQuery.js"></script>
+    </body>
+    
+</html>

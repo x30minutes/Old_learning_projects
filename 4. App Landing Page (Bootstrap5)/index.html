@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="styling.css" rel="stylesheet">
+    <title>App Landing Page</title>
+  </head>
+  <body>
+    <div class="card">
+<!--        create background image in card component of bootstrap
+            It has been commented out as it is not adjusting well the picture's height-->
+<!--        <img src="https://freenaturestock.com/wp-content/uploads/freenaturestock-1441-1024x683.jpeg" class="card-img" alt="...">-->
+        <div class="card-img-overlay">
+<!--            create logo-->
+            <div>
+                <img src="images/plane1.png" class="card-img-top" alt="..." id="logo">
+            </div>
+<!--            create featured part-->
+            <div class="featured">
+<!--                create row to use grid system and limit space taken by featured content-->
+                <div class="row">
+<!--                    Use only 9columns out of 12 for medium and large devices-->
+                    <div class="col-md-9">
+                        <h1 class="card-title">Best Holiday Finder App.</h1>
+                        <p class="card-text">Find your next holiday destination using our App! <br />Compare offers and save your hard earned money for your trip!</p>
+                        <a class="btn btn-default btn-lg" href="#">Find out more</a>
+                        <a class="btn btn-default btn-lg" href="#">Download</a>
+                        <p></p>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+<!--      Create the trial section-->
+      <div class="trial">
+          <div class="container">
+              <h2>Try it now</h2>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Available_on_the_App_Store_%28black%29.png/799px-Available_on_the_App_Store_%28black%29.png">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/512px-Google_Play_Store_badge_EN.svg.png">
+            </div>
+      </div>
+      
+<!--      create a footer-->
+      <div class="footer">
+          <div class="container">
+              <p>&copy;Develop with Hubert</p>
+          </div>
+      </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

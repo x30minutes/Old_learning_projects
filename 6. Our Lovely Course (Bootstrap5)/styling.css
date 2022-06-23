@@ -1,0 +1,231 @@
+/*Body:
+-Give the body element a relative position for the scrollspy to work.
+-Add a font family to the whole page*/
+
+body{
+    position: relative;
+    font-family: 'Vollkorn', sans-serif;
+}
+
+/*Video:
+-Set the fixed video as background, make it fixed
+-Make sure it appears behind all elements
+-Make it spread across the whole webpage*/
+#backgroundVideo{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-height: 100%;
+    min-width: 100%;
+/*    Center the video background relative screen size*/
+    transform: translateX(calc((100% - 100vw)/2)); 
+    z-index: -100;
+/*
+    background-position: center;
+    background-size: cover;
+*/
+    
+}
+/*Video does not work in small devices:
+-Hide the video and set picture as background (use @media queries
+-Make it spread across whole webpage*/
+
+@media (max-device-width:768px){
+    body{
+        background: url(images/background.jpg) center center fixed;
+        background-size: cover;
+    }
+    #backgroundVideo{
+        display: none;
+    }
+}
+
+/*Style the navigation bar using a navbar css generator*/
+
+.navbar{
+    padding: 0;
+    height: 62px
+}
+
+.navbar-dark .navbar-brand{
+    font-size: 26px
+}
+
+.navbar-dark .nav-item .nav-link{
+    font-size: 20px;
+    padding: 16px;
+}
+
+.navbar-dark .nav-item .nav-link:hover, .navbar-dark .nav-item .nav-link:focus{
+    color: #fff;
+    background-color: rgba(14, 14, 14, 0.5);
+}
+
+
+/*Style the Home Section and elements inside it:
+-Reduce the margin-bottom of h1 and h2.
+-Style the button and it's hover state'*/
+
+#homeSection{
+    padding-top:15% ;
+    color: #fff;
+    background-color: transparent;
+    border: 0;
+}
+
+#homeSection h1{
+    font-size: 50px ;
+    margin-bottom: 30px;
+}
+
+#homeSection h2{
+    margin-bottom: 50px;
+}
+
+#joinButton{
+    border: 0;
+    border-radius: 10px ;
+    background-color: rgb(65, 33, 119);
+    padding: 10px;
+    font-size: 20px
+}
+
+#joinButton:hover{
+    background-color: rgba(65, 33, 119, 0.5);
+}
+
+/*Style the About section:
+-Add padding-top so that the nav link is active before the carousel hits the top border of the page
+-Limit its width in big devices to 1000px
+-Make heading bold and set the dimensions of pictures*/
+
+.container{
+    width: 1200px;
+}
+
+.card-group{
+    padding-top: 15%;
+}
+
+.card-group .card{
+    background-color: transparent;
+    color: #fff;
+    border: 0;
+    padding: 5px;
+}
+
+.card-group .card h2{
+    font-weight: bold;
+}
+
+.card-group .card img{
+    width: 200px;
+    height: 200px;
+}
+
+/*Style the promise section:
+-Add padding-top for early activation of the nav link.
+-Set the width of the carousel and center it
+-Set the height of pictures and center them inside the carousel items
+-Move the carousel caption under the pictures*/
+
+#ourPromiseSection{
+    padding-top: 15%;
+    color: #fff;
+    margin-bottom: 15%;
+}
+
+#ourPromiseSection .card{
+    background-color: transparent;
+    margin-bottom: 50px;
+    border: 0;
+}
+
+#ourPromiseSection img{
+    width: 600px;
+    height: 600px;
+}
+/*Style the pictures and nav-brand for different screens:
+-First breaking point at 768px
+-Second breaking point at 400px*/
+
+@media (max-width:768px){
+    .navbar-dark .navbar-brand{
+        font-size: 20px
+    }
+    .container{
+        width: auto;
+    }
+    #ourPromiseSection img{
+        height: 300px;
+        width: 300px;
+    }
+    #ourPromiseSection h5{
+        font-size: 14px;
+    }
+    .card-group .card{
+        width: 100%
+    }
+    .card-group .card img{
+    width: 120px;
+    height: 120px;
+    }
+    .card-group .card h2{
+        font-size: 18px;
+    }
+    .card-group .card p{
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width:400px){
+    .navbar-dark .navbar-brand{
+        font-size: 16px;
+    }
+    .navbar-dark .nav-item .nav-link{
+        font-size: 12px;
+    }
+    #homeSection h1{
+        font-size: 30px ;
+        margin-bottom: 10px;
+    }
+
+    #homeSection h2{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    
+    #joinButton{
+        padding: 10px;
+        font-size: 14px;
+    }
+    #ourPromiseSection img{
+        height: 200px;
+        width: 200px;
+    }
+    #ourPromiseSection h5{
+        font-size: 12px;
+    }
+    .card-group .card img{
+        width: 80px;
+        height: 80px;
+    }
+    .card-group .card h2{
+        font-size: 16px;
+    }
+    .card-group .card p{
+        font-size: 12px;
+    }
+}
+
+/*Style the footer*/
+.footer{
+    height: 40px;
+    color: rgb(80,80,80);
+    background-color: rgb(0,0,0,0.5);
+    font-size: 20px;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
